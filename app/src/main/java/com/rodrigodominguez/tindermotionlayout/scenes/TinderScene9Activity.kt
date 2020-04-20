@@ -15,7 +15,7 @@ class TinderScene9Activity : AppCompatActivity() {
         setContentView(R.layout.activity_tinder_scene9)
         val viewModel = ViewModelProviders
             .of(this)
-            .get(SwipeRightViewModel::class.java)
+            .get(TinderContactViewModel::class.java)
 
         viewModel
             .modelStream
@@ -37,7 +37,7 @@ class TinderScene9Activity : AppCompatActivity() {
         })
     }
 
-    private fun bindCard(model: SwipeRightModel) {
+    private fun bindCard(model: TinderContactModel) {
         containerCardOne.setBackgroundColor(model.top.backgroundColor)
         containerCardTwo.setBackgroundColor(model.bottom.backgroundColor)
     }

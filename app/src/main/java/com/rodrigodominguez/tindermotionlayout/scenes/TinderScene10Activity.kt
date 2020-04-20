@@ -8,7 +8,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.rodrigodominguez.tindermotionlayout.R
 import kotlinx.android.synthetic.main.activity_tinder_scene10.*
-import kotlinx.android.synthetic.main.activity_tinder_scene9.*
 import kotlinx.android.synthetic.main.activity_tinder_scene9.containerCardOne
 import kotlinx.android.synthetic.main.activity_tinder_scene9.containerCardTwo
 import kotlinx.android.synthetic.main.activity_tinder_scene9.motionLayout
@@ -20,7 +19,7 @@ class TinderScene10Activity : AppCompatActivity() {
 
         val viewModel = ViewModelProviders
             .of(this)
-            .get(SwipeRightViewModel::class.java)
+            .get(TinderContactViewModel::class.java)
 
         viewModel
             .modelStream
@@ -50,7 +49,7 @@ class TinderScene10Activity : AppCompatActivity() {
         }
     }
 
-    private fun bindCard(model: SwipeRightModel) {
+    private fun bindCard(model: TinderContactModel) {
         containerCardOne.setBackgroundColor(model.top.backgroundColor)
         containerCardTwo.setBackgroundColor(model.bottom.backgroundColor)
     }

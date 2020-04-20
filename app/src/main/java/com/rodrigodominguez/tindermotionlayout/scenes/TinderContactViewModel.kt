@@ -4,54 +4,52 @@ import android.graphics.Color
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
-import com.rodrigodominguez.tindermotionlayout.scenes.SwipeRightCardModel
-import com.rodrigodominguez.tindermotionlayout.scenes.SwipeRightModel
 
-class SwipeRightViewModel: ViewModel() {
+class TinderContactViewModel: ViewModel() {
 
-    private val stream = MutableLiveData<SwipeRightModel>()
+    private val stream = MutableLiveData<TinderContactModel>()
 
-    val modelStream: LiveData<SwipeRightModel>
+    val modelStream: LiveData<TinderContactModel>
         get() = stream
 
     private val data = listOf(
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#c50e29")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#c60055")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#aa00c7")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#3f1dcb")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#0043ca")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#005ecb")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#00b686")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#00b248")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#32cb00")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#90cc00")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#c7b800")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#c79400")
         ),
-        SwipeRightCardModel(
+        TinderContactCardModel(
             backgroundColor = Color.parseColor("#c56200")
         )
     )
@@ -72,7 +70,7 @@ class SwipeRightViewModel: ViewModel() {
     }
 
     private fun updateStream() {
-        stream.value = SwipeRightModel(
+        stream.value = TinderContactModel(
             top = topCard,
             bottom = bottomCard
         )

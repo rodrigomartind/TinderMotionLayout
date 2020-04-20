@@ -2,6 +2,6 @@ package com.rodrigodominguez.tindermotionlayout.scenes
 
 import androidx.annotation.ColorInt
 
-data class SwipeRightCardModel(
+data class TinderContactCardModel(
     @ColorInt val backgroundColor: Int
 )
