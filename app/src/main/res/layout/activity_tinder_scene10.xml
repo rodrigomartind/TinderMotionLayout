@@ -21,12 +21,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerCardTwo"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/containerCardTwo">
-
+            android:layout_height="match_parent">
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
+
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardOne"
@@ -41,9 +41,9 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerCardOne"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/containerCardOne">
+            android:layout_height="match_parent">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -71,7 +71,7 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@id/cardOne"
         app:layout_constraintEnd_toEndOf="@id/cardOne"
-        app:layout_constraintStart_toStartOf="@id/cardOne"/>
+        app:layout_constraintStart_toStartOf="@id/cardOne" />
 
     <TextView
         android:id="@+id/name"
@@ -80,11 +80,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="36dp"
-        android:textSize="24sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
         android:elevation="1dp"
         android:text="Rodrigo Dominguez, 27"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/description"
         app:layout_constraintEnd_toEndOf="@id/cardOne"
         app:layout_constraintStart_toStartOf="@id/cardOne" />
@@ -94,12 +94,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:elevation="1dp"
-        android:textSize="18sp"
-        android:textColor="@android:color/white"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
+        android:elevation="1dp"
         android:text="Descripcion fasdfs sdgsfge dfbgdfk sdkmskmgkmdsfg sgkms"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@id/cardOne"
         app:layout_constraintEnd_toEndOf="@id/cardOne"
         app:layout_constraintStart_toStartOf="@id/cardOne" />
@@ -118,8 +118,8 @@
         android:id="@+id/superLikeFloating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Super like"
         android:layout_marginBottom="24dp"
+        android:text="Super like"
         app:icon="@drawable/whatshot_24px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/likeFloating"
@@ -132,7 +132,9 @@
         android:layout_marginBottom="24dp"
         android:src="@drawable/favorite_border_24px"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/superLikeFloating"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/superLikeFloating" />
+
+
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

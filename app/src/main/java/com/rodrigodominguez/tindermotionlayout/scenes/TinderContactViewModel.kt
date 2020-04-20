@@ -14,43 +14,43 @@ class TinderContactViewModel: ViewModel() {
 
     private val data = listOf(
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#c50e29")
+            name = "Rodrigo Dominguez", age = 27, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#c50e29")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#c60055")
+            name = "CerveChat Dominguez", age = 2, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#c60055")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#aa00c7")
+            name = "Sofia Jerez Test", age = 27, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#aa00c7")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#3f1dcb")
+            name = "Maria Perez", age = 34, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#3f1dcb")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#0043ca")
+            name = "Rodrigo Dominguez", age = 27, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#0043ca")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#005ecb")
+            name = "Rodrigo Dominguez", age = 222, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#005ecb")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#00b686")
+            name = "Perez Gonzalez", age = 45, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#00b686")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#00b248")
+            name = "Tomas Dominguez", age = 43, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#00b248")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#32cb00")
+            name = "Rodrigo Dominguez", age = 44, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#32cb00")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#90cc00")
+            name = "Lopez Jose Jose", age = 87, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#90cc00")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#c7b800")
+            name = "Felipe Felipe Lopez", age = 23, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#c7b800")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#c79400")
+            name = "Nicolas Lucas Test", age = 27, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#c79400")
         ),
         TinderContactCardModel(
-            backgroundColor = Color.parseColor("#c56200")
+            name = "John", age = 237, description = "Esto es una descripcion de ejemplo", backgroundColor = Color.parseColor("#c56200")
         )
     )
     private var currentIndex = 0

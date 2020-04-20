@@ -51,7 +51,10 @@ class TinderScene10Activity : AppCompatActivity() {
 
     private fun bindCard(model: TinderContactModel) {
         containerCardOne.setBackgroundColor(model.top.backgroundColor)
+        name.text = "${model.top.name}, ${model.top.age}"
+        description.text = model.top.description
         containerCardTwo.setBackgroundColor(model.bottom.backgroundColor)
+
     }
 
 }
