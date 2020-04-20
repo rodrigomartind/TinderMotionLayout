@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/tinder_scene9"
+    app:motionDebug="SHOW_ALL"
+    tools:context=".scenes.TinderScene7Activity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTwo"
+        android:layout_width="270dp"
+        android:layout_height="424dp"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardBackgroundColor="@color/design_default_color_secondary"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerCardTwo">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardOne"
+        android:layout_width="270dp"
+        android:layout_height="424dp"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerCardOne">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:elevation="1dp"
+        android:padding="4dp"
+        android:src="@drawable/arrow_back_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:gravity="center_horizontal"
+        android:text="More detail"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/cardOne"
+        app:layout_constraintEnd_toEndOf="@id/cardOne"
+        app:layout_constraintStart_toStartOf="@id/cardOne"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:elevation="1dp"
+        android:text="Rodrigo Dominguez, 27"
+        app:layout_constraintBottom_toTopOf="@id/description"
+        app:layout_constraintEnd_toEndOf="@id/cardOne"
+        app:layout_constraintStart_toStartOf="@id/cardOne" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:elevation="1dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Descripcion fasdfs sdgsfge dfbgdfk sdkmskmgkmdsfg sgkms"
+        app:layout_constraintBottom_toBottomOf="@id/cardOne"
+        app:layout_constraintEnd_toEndOf="@id/cardOne"
+        app:layout_constraintStart_toStartOf="@id/cardOne" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
