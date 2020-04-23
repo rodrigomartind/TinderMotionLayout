@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        android:id="@+id/startToEnd1"
+        android:id="@+id/startToUnlike"
         app:constraintSetEnd="@+id/unlike"
         app:constraintSetStart="@+id/start">
 

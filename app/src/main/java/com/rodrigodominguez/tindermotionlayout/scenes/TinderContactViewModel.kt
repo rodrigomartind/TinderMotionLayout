@@ -61,18 +61,18 @@ class TinderContactViewModel: ViewModel() {
         get() = data[(currentIndex + 1) % data.size]
 
     init {
-        updateStream()
+        updateCards()
     }
 
     fun swipe() {
         currentIndex += 1
-        updateStream()
+        updateCards()
     }
 
-    private fun updateStream() {
+    private fun updateCards() {
         stream.value = TinderContactModel(
-            top = topCard,
-            bottom = bottomCard
+            cardTop = topCard,
+            cardBottom = bottomCard
         )
     }
 

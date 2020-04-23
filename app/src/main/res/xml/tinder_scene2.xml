@@ -27,7 +27,7 @@
 
     <Transition
         app:autoTransition="animateToEnd"
-        app:constraintSetEnd="@+id/offScreenPass"
+        app:constraintSetEnd="@+id/offScreenUnlike"
         app:constraintSetStart="@+id/unlike"
         app:duration="150" />
 
@@ -60,7 +60,7 @@
     </ConstraintSet>
 
     <ConstraintSet
-        android:id="@+id/offScreenPass"
+        android:id="@+id/offScreenUnlike"
         app:deriveConstraintsFrom="@id/unlike">
 
         <Constraint android:id="@id/cardOne">

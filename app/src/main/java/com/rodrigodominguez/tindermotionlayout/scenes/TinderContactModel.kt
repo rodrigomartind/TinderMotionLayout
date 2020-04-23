@@ -1,6 +1,6 @@
 package com.rodrigodominguez.tindermotionlayout.scenes
 
 data class TinderContactModel(
-    val top: TinderContactCardModel,
-    val bottom: TinderContactCardModel
+    val cardTop: TinderContactCardModel,
+    val cardBottom: TinderContactCardModel
 )

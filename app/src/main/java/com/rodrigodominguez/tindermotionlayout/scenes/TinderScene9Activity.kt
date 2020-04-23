@@ -26,7 +26,7 @@ class TinderScene9Activity : AppCompatActivity() {
         motionLayout.setTransitionListener(object : TransitionAdapter() {
             override fun onTransitionCompleted(motionLayout: MotionLayout, currentId: Int) {
                 when (currentId) {
-                    R.id.offScreenPass,
+                    R.id.offScreenUnlike,
                     R.id.offScreenLike -> {
                         motionLayout.progress = 0f
                         motionLayout.setTransition(R.id.start, R.id.detail)
@@ -38,7 +38,7 @@ class TinderScene9Activity : AppCompatActivity() {
     }
 
     private fun bindCard(model: TinderContactModel) {
-        containerCardOne.setBackgroundColor(model.top.backgroundColor)
-        containerCardTwo.setBackgroundColor(model.bottom.backgroundColor)
+        containerCardOne.setBackgroundColor(model.cardTop.backgroundColor)
+        containerCardTwo.setBackgroundColor(model.cardBottom.backgroundColor)
     }
 }
