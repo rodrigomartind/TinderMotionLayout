@@ -3,6 +3,7 @@ package com.rodrigodominguez.tindermotionlayout
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rodrigodominguez.tindermotionlayout.rotationcard.RotationCardActivity
 import com.rodrigodominguez.tindermotionlayout.scenes.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -59,6 +60,11 @@ class MainActivity : AppCompatActivity() {
         scene_10.setOnClickListener {
             startActivity(
                 Intent(this, TinderScene10Activity::class.java)
+            )
+        }
+        rotationCard.setOnClickListener {
+            startActivity(
+                Intent(this, RotationCardActivity::class.java)
             )
         }
     }

@@ -19,6 +19,7 @@
         <activity android:name=".scenes.TinderScene3Activity" />
         <activity android:name=".scenes.TinderScene2Activity" />
         <activity android:name=".scenes.TinderScene1Activity" />
+        <activity android:name=".rotationcard.RotationCardActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
